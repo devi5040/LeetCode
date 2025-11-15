@@ -25,11 +25,11 @@ sum(0, r) = prefix[r]
 
 **Pattern Recognition — When to Use Prefix Sums**
 
-- [-] Fast range sum queries : Sum of subarray from i to j
-- [-] Count of something in a range : How many 1s from index i to j?
-- [-] Check if a subarray has some property : Is there a subarray whose sum is k?
-- [-] Transform array for fast queries : "Sum of matrix sub-rectangle" → 2D prefix sums
-- [-] Find subarray with maximum/minimum sum : Kadane’s + prefix thought process
+- [x] Fast range sum queries : Sum of subarray from i to j
+- [x] Count of something in a range : How many 1s from index i to j?
+- [x] Check if a subarray has some property : Is there a subarray whose sum is k?
+- [x] Transform array for fast queries : "Sum of matrix sub-rectangle" → 2D prefix sums
+- [x] Find subarray with maximum/minimum sum : Kadane’s + prefix thought process
 
 **Types of Prefix Sum**
 
@@ -74,11 +74,12 @@ sum(0, r) = prefix[r]
     -> prefix[i] % k == prefix[j] % k
 
 **Framework: How to solve prefix sum**
-Step 1: Check if the problem asks:
-range sum, subarray sum, count in range, matrix sum.
-then use prefix sum to solve.
-Step 2: Build the prefix array.
-Step 3: Apply correct formula based on the case.
-Step 4: If target subarray sum=k then use hashmap
-key: prefix sum, value: frequency.
-Step 5: Be careful with boundary l=0.
+
+- Step 1: Check if the problem asks:
+  range sum, subarray sum, count in range, matrix sum.
+  then use prefix sum to solve.
+- Step 2: Build the prefix array.
+- Step 3: Apply correct formula based on the case.
+- Step 4: If target subarray sum=k then use hashmap
+  key: prefix sum, value: frequency.
+- Step 5: Be careful with boundary l=0.
