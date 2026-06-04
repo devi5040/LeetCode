@@ -7,3 +7,4 @@
 - [x] Top K Frequent Elements
 - [x] Product of array except self
 - [x] Longest Consecutive sequence
+- [x] Valid sudoku
