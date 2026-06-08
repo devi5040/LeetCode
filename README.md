@@ -8,3 +8,6 @@
 - [x] Product of array except self
 - [x] Longest Consecutive sequence
 - [x] Valid sudoku
+- [x] Valid palindrome
+- [x] Two Sum II
+- [x] Three Sum
