@@ -11,3 +11,6 @@
 - [x] Valid palindrome
 - [x] Two Sum II
 - [x] Three Sum
+- [x] Container with most water
+- [x] Trapping Rain Water
+- [x] Move Zeroes
