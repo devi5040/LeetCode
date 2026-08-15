@@ -75,3 +75,27 @@ public:
         return search(matrix, 0, m - 1, 0, n - 1, target);
     }
 };
+
+// Stair case
+class Solution
+{
+public:
+    bool searchMatrix(vector<vector<int>> &matrix, int target)
+    {
+        int m = matrix.size(), n = matrix[0].size();
+        int row_start = 0, column_start = n - 1;
+        while (row_start < m && column_start >= 0)
+        {
+            int current = matrix[row_start][column_start];
+            if (current == target)
+                return true;
+            else if (current > target)
+            {
+                column_start--;
+            }
+            else
+                row_start++;
+        }
+        return false;
+    }
+};
