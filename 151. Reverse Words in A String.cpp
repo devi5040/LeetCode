@@ -1,9 +1,3 @@
-#include <iostream>
-#include <string>
-#include <algorithm>
-
-using namespace std;
-
 class Solution
 {
 public:
@@ -49,17 +43,28 @@ public:
         return temp;
     }
 };
-int main()
+
+class Solution
 {
-    Solution sol;
+public:
+    string reverseWords(string s)
+    {
+        stack<string> st;
+        stringstream ss(s);
+        string word;
+        string res;
 
-    // 🔹 Fixed input vector
+        while (ss >> word)
+            st.push(word);
 
-    string str = "  hello world   ";
-    string result = sol.reverseWords(str);
+        while (!st.empty())
+        {
+            res += st.top();
+            st.pop();
+            if (!st.empty())
+                res += ' ';
+        }
 
-    cout << "Reversed words: " << result << endl;
-    cout << "Size of result: " << result.size() << endl;
-
-    return 0;
-}
+        return res;
+    }
+};
